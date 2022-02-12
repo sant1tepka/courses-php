@@ -1,0 +1,22 @@
+<?php
+
+function multiply(int $a, int $b)
+{
+return $a * $b;
+}
+
+function display($message)
+{
+var_dump($message);
+}
+
+//display(multiply(10, 20));
+
+$a = 2;
+
+$pow = function (int $pow) use ($a)
+{
+	return $a ** $pow;
+};
+
+echo $pow(2);

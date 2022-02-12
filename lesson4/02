@@ -1,0 +1,13 @@
+<?php
+
+$a = 22;
+$b = 100;
+
+display($b);
+
+function display(int $a)
+{
+echo "$a";
+}
+
+
