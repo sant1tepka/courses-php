@@ -1,0 +1,13 @@
+<?php
+
+$a = rand();
+
+$b = $a % 2;
+
+if ($b == 0) {
+	echo "odd";
+	}
+else if ($b == 1) {
+	echo "even";
+	}
+

@@ -1,0 +1,34 @@
+<?php
+
+$a = 55;
+$b = -8;
+$c = -2;
+
+if ($a == 0) {
+	echo "a = $a";
+	}
+else if ($b == 0) {
+	echo "b = $b";
+	}
+else if ($c == 0) {
+	echo "c = $c";
+	}
+else {
+	if ($a > $b and $a > $c) {
+		echo "a - больше всех";
+	} else if ($a < $b and $a < $c){
+		echo "a - меньше всех";
+	}
+
+	if ($b > $a and $b > $c) {
+		echo "b - больше всех";
+	} else if ($b < $a and $b < $c){
+		echo "b - меньше всех";
+	}
+
+	if ($c > $b and $c > $a) {
+		echo "a - больше всех";
+	} else if ($c < $b and $c < $a){
+		echo "c - меньше всех";
+	}
+}	
