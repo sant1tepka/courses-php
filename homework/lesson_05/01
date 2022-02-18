@@ -1,0 +1,19 @@
+<?php
+
+
+function foo(string $first, string $second){
+	$sf = str_split($first);
+	$ss = str_split($second);
+	if(count($sf) > count($ss)){
+		$cnt = count($sf);
+	}
+	else{
+		$cnt = count($ss);
+	}
+	return($cnt / count(array_diff($sf, $sf)));  //не успел закончить. Выкладываю,
+							//чтобы посмотреть как сделали другие
+	
+}
+
+var_dump (foo("kekk", "akek"));
+
