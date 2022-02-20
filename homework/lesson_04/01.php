@@ -1,21 +1,35 @@
 <?php
 
+$a = 5;
+$b = 2;
+$c = 5;
+
 function numbers ($first, $second, $third) {
 	if ($first > $second and $first > $third) {
-		return "first number $first is biggest";
+		return "
+first number $first is biggest
+";
 	} 
 	else if ($second > $first and $second > $third) {
-		return "second number $second is biggest";
+		return "
+second number $second is biggest
+";
 	}
 	else if ($third > $second and $third > $first) {
-		return "third number $third is biggest";
+		return "
+third number $third is biggest
+";
 	}
 
 	else if ($first == $second or $first = $third) {
-		return $first;
+		return "
+$first
+";
 	}
 	else if ($second = $third) {
-		return $second;
+		return "
+$second
+";
 	}
 }	
-echo (numbers(rand(), rand(), rand()));
+echo (numbers($a, $b, $c));

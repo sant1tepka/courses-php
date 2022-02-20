@@ -1,0 +1,28 @@
+<?php
+
+$a = [0, 1, 4, 5, 2, 3];
+
+
+function sum($sum, $element){
+	$sum += $element;
+	return $sum;
+}
+
+
+function foo($var) {
+    return $var >= 3;
+}
+
+
+function reverse($a) {
+	$cnt = count($a);
+	for ($i = 0; $i < $cnt; $i++) {
+		$b[] = array_pop($a);
+	}
+	return $b;
+}
+
+var_dump(array_reduce($a, "sum"));
+var_dump(array_filter($a, "foo"));
+var_dump(reverse($a));
+

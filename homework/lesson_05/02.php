@@ -8,4 +8,3 @@ function foo(string $a, string $b) {
 
 foo("asd", "x");
 
-
